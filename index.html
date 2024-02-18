@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Spend Elon Musk's Money</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Spend Elon Musk's Money.</h1>
+    </div>
+
+    <div class="elon">
+      <img src="/assets/images/elon.jpeg" alt="elon" />
+      <img class="money" src="/assets/images/money.gif" alt="money" />
+    </div>
+    <div id="initial-amount" class="navbar">
+      <h3 id="remaining-money">$236,000,000,000</h3>
+    </div>
+
+    <!-- Cash audio -->
+    <audio id="myAudio">
+      <source src="/Sounds/cash.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <div class="items-container">
+      
+      <!-- Burger -->
+      <div class="item" data-cost="10">
+        <img src="/assets/images/burger.webp" alt="burger" />
+        <span>Burger - $10</span>
+        <input type="number" min="1" value="1" />
+        <button onclick="buyItem(this.parentElement)">Buy</button>
+      </div>
+
+      <!-- Charity -->
+      <div class="item" data-cost="100">
+        <img src="/assets/images/charity.webp" alt="charity" />
+        <span>Donate - $100</span>
+        <input type="number" min="1" value="1" />
+        <button onclick="buyItem(this.parentElement)">Buy</button>
+      </div>
+
+      <!-- Sneakers -->
+      <div class="item" data-cost="150">
+        <img src="/assets/images/sneakers.avif" alt="sneaker" />
+        <span>Sneakers - $150</span>
+        <input type="number" min="1" value="1" />
+        <button onclick="buyItem(this.parentElement)">Buy</button>
+      </div>
+
+      <!--PS5-->
+      <div class="item" data-cost="500">
+        <img src="/assets/images/ps5.avif" alt="ps5" />
+        <span>PS5 - $500</span>
+        <input type="number" min="1" value="1" />
+        <button onclick="buyItem(this.parentElement)">Buy</button>
+      </div>
+
+      <!--Mac-->
+      <div class="item" data-cost="7000">
+        <img src="/assets/images/mac.avif" alt="mac" />
+        <span>MacBook - $7,000</span>
+        <input type="number" min="1" value="1" />
+        <button onclick="buyItem(this.parentElement)">Buy</button>
+      </div>
+
+      <!-- Luxury Clothes -->
+      <div class="item" data-cost="1000">
+        <img src="/assets/images/clothes.webp" alt="clothes" />
+        <span>Luxury Clothing - $1,000</span>
+        <input type="number" min="1" value="1" />
+        <button onclick="buyItem(this.parentElement)">Buy</button>
+      </div>
+
+      <!-- Gold -->
+      <div class="item" data-cost="70000">
+        <img src="/assets/images/gold.avif" alt="gold" />
+        <span>1 kg Gold - $70,000</span>
+        <input type="number" min="1" value="1" />
+        <button onclick="buyItem(this.parentElement)">Buy</button>
+      </div>
+
+      <!-- Electric Car -->
+      <div class="item" data-cost="80000">
+        <img src="/assets/images/tesla.avif" alt="tesla" />
+        <span>Electric Car - $80,000</span>
+        <input type="number" min="1" value="1" />
+        <button onclick="buyItem(this.parentElement)">Buy</button>
+      </div>
+
+      <!-- Personal Supercomputer -->
+      <div class="item" data-cost="100000">
+        <img src="/assets/images/supercomp.webp" alt="Supercomputer" />
+        <span>Personal Supercomputer - $100,000</span>
+        <input type="number" min="1" value="1" />
+        <button onclick="buyItem(this.parentElement)">Buy</button>
+      </div>
+
+      <!-- Mansion -->
+      <div class="item" data-cost="1000000">
+        <img src="/assets/images/mansion.avif" alt="mansion" />
+        <span>Mansion - $1,000,000</span>
+        <input type="number" min="1" value="1" />
+        <button onclick="buyItem(this.parentElement)">Buy</button>
+      </div>
+
+      <!-- Private Jet -->
+      <div class="item" data-cost="45000000">
+        <img src="/assets/images/jet.avif" alt="jet" />
+        <span>Private Jet - $45,000,000</span>
+        <input type="number" min="1" value="1" />
+        <button onclick="buyItem(this.parentElement)">Buy</button>
+      </div>
+
+      <!-- SpaceX Rocket -->
+      <div class="item" data-cost="60000000">
+        <img src="/assets/images/spacex.avif" alt="spacex" />
+        <span>SpaceX Rocket - $60,000,000</span>
+        <input type="number" min="1" value="1" />
+        <button onclick="buyItem(this.parentElement)">Buy</button>
+      </div>
+
+      <!-- Unicorn Startup -->
+      <div class="item" data-cost="1000000000">
+        <img src="/assets/images/unicorn.avif" alt="uni" />
+        <span>Unicorn Startup - $1,000,000,000</span>
+        <input type="number" min="1" value="1" />
+        <button onclick="buyItem(this.parentElement)">Buy</button>
+      </div>
+
+      <!-- Bird App -->
+      <div class="item" data-cost="44000000000">
+        <img src="/assets/images/birdapp.avif" alt="birdapp" />
+        <span>Bird App - $44,000,000,000</span>
+        <input type="number" min="1" value="1" />
+        <button onclick="buyItem(this.parentElement)">Buy</button>
+      </div>
+    </div>
+
+    <div class="thanks">
+      That's it . Visit my homepage ->
+      <a href="https://dask-58.github.io"
+        ><span style="color: red">here</span></a
+      >.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
