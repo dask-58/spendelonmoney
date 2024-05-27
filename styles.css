@@ -12,7 +12,7 @@
   
   body {
     height: 100vh;
-    background-color: #f7f3e9;
+    background-color: #FEFAF6;
     font-family: 'Rubik Bubbles', cursive;
     overflow-x: hidden;
   }
@@ -24,7 +24,7 @@
     font-size: 6vmin;
     margin-top: 20px;
     padding: 30px;
-    color: #333;
+    color: crimson;
     text-shadow: 2px 2px 0 #fff, 4px 4px 0 #ccc;
   }
   
@@ -57,8 +57,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #7ff76f;
-    color: #333;
+    background-color: rgb(20, 182, 61);
+    color: black;
     font-family: 'Bungee', cursive;
     text-align: center;
     font-size: 4vmin;
@@ -114,7 +114,7 @@
     margin-top: 10px;
     width: 60px;
     padding: 5px;
-    border: 2px solid #333;
+    border: 2px solid #51829B;
     border-radius: 10px;
     text-align: center;
     font-family: 'Bungee', cursive;
@@ -124,7 +124,7 @@
   .item button {
     margin-top: 10px;
     background-color: #f7dc6f;
-    color: #333;
+    color: #333333;
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
@@ -142,7 +142,7 @@
   .thanks {
     text-align: center;
     padding: 20px;
-    color: #333;
+    color: #51829B;
     font-size: 2.5vmin;
     font-family: 'Bungee', cursive;
   }
@@ -163,6 +163,14 @@
       width: 80%;
     }
     .item img {
+      height: auto;
+    }
+    .elon img {
+      height: auto;
+      width: 100px;
+    }
+    .elon .money {
+      width: 80px;
       height: auto;
     }
   }
