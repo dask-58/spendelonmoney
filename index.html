@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Spend Elon Musk's Money</title>
+    <!-- Add Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Rubik+Bubbles&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="heading">
-      <h1>Spend Elon Musk's Money.</h1>
+      <h1>Spend Elon Musk's Money</h1>
     </div>
 
     <div class="elon">
-      <img src="/assets/images/elon.jpeg" alt="elon" />
-      <img class="money" src="/assets/images/money.gif" alt="money" />
+      <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-1229892983-square.jpg" alt="elon" />
+      <img class="money" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv1w5Q_vpPX9CmznV5tuaZsqHMXM5CpfJFfaKKVe84-Q&s" alt="money" />
     </div>
     <div id="initial-amount" class="navbar">
       <h3 id="remaining-money">$236,000,000,000</h3>
@@ -21,123 +25,89 @@
 
     <!-- Cash audio -->
     <audio id="myAudio">
-      <source src="/Sounds/cash.mp3" type="audio/mp3" />
+      <source src="/cash.mp3" type="audio/mp3" />
       Your browser does not support the audio element.
     </audio>
 
     <div class="items-container">
-
-      <!-- Burger -->
-      <div class="item" data-cost="10">
-        <img src="/assets/images/burger.webp" alt="burger" />
-        <span>Burger - $10</span>
+      <!-- Items go here -->
+      <div class="item" data-cost="50000">
+        <img src="https://zoom.jewelryimages.net/edge/theringaustin/images/edge/140-01939.png" alt="ring" />
+        <span>Diamond Ring - $50,000</span>
         <input type="number" min="1" value="1" />
-        <button onclick="buyItem(this.parentElement)">Buy</button>
+        <button>Buy</button>
       </div>
 
-      <!-- Charity -->
-      <div class="item" data-cost="100">
-        <img src="/assets/images/charity.webp" alt="charity" />
-        <span>Donate - $100</span>
+      <div class="item" data-cost="5">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuuBjZrzK1xcT5hGEvbdkNXV2508Wtqka13mncadVcbg&s" alt="ring" />
+        <span>Burger - $5</span>
         <input type="number" min="1" value="1" />
-        <button onclick="buyItem(this.parentElement)">Buy</button>
+        <button>Buy</button>
       </div>
 
-      <!-- Sneakers -->
-      <div class="item" data-cost="150">
-        <img src="/assets/images/sneakers.avif" alt="sneaker" />
-        <span>Sneakers - $150</span>
-        <input type="number" min="1" value="1" />
-        <button onclick="buyItem(this.parentElement)">Buy</button>
-      </div>
-
-      <!--PS5-->
-      <div class="item" data-cost="500">
-        <img src="/assets/images/ps5.avif" alt="ps5" />
-        <span>PS5 - $500</span>
-        <input type="number" min="1" value="1" />
-        <button onclick="buyItem(this.parentElement)">Buy</button>
-      </div>
-
-      <!--Mac-->
-      <div class="item" data-cost="7000">
-        <img src="/assets/images/mac.avif" alt="mac" />
-        <span>MacBook - $7,000</span>
-        <input type="number" min="1" value="1" />
-        <button onclick="buyItem(this.parentElement)">Buy</button>
-      </div>
-
-      <!-- Luxury Clothes -->
-      <div class="item" data-cost="1000">
-        <img src="/assets/images/clothes.webp" alt="clothes" />
-        <span>Luxury Clothing - $1,000</span>
-        <input type="number" min="1" value="1" />
-        <button onclick="buyItem(this.parentElement)">Buy</button>
-      </div>
-
-      <!-- Gold -->
-      <div class="item" data-cost="70000">
-        <img src="/assets/images/gold.avif" alt="gold" />
-        <span>1 kg Gold - $70,000</span>
-        <input type="number" min="1" value="1" />
-        <button onclick="buyItem(this.parentElement)">Buy</button>
-      </div>
-
-      <!-- Electric Car -->
-      <div class="item" data-cost="80000">
-        <img src="/assets/images/tesla.avif" alt="tesla" />
-        <span>Electric Car - $80,000</span>
-        <input type="number" min="1" value="1" />
-        <button onclick="buyItem(this.parentElement)">Buy</button>
-      </div>
-
-      <!-- Personal Supercomputer -->
-      <div class="item" data-cost="100000">
-        <img src="/assets/images/supercomp.webp" alt="Supercomputer" />
-        <span>Personal Supercomputer - $100,000</span>
-        <input type="number" min="1" value="1" />
-        <button onclick="buyItem(this.parentElement)">Buy</button>
-      </div>
-
-      <!-- Mansion -->
-      <div class="item" data-cost="1000000">
-        <img src="/assets/images/mansion.avif" alt="mansion" />
+      <div class="item" data-cost="50000">
+        <img src="https://c4.wallpaperflare.com/wallpaper/578/514/409/architecture-building-design-house-wallpaper-thumb.jpg" alt="ring" />
         <span>Mansion - $1,000,000</span>
         <input type="number" min="1" value="1" />
-        <button onclick="buyItem(this.parentElement)">Buy</button>
+        <button>Buy</button>
       </div>
 
-      <!-- Private Jet -->
-      <div class="item" data-cost="45000000">
-        <img src="/assets/images/jet.avif" alt="jet" />
-        <span>Private Jet - $45,000,000</span>
+      <div class="item" data-cost="50000">
+        <img src="https://images2.alphacoders.com/458/458435.jpg" alt="ring" />
+        <span>Macbook - $10,000</span>
         <input type="number" min="1" value="1" />
-        <button onclick="buyItem(this.parentElement)">Buy</button>
+        <button>Buy</button>
       </div>
 
-      <!-- SpaceX Rocket -->
-      <div class="item" data-cost="60000000">
-        <img src="/assets/images/spacex.avif" alt="spacex" />
-        <span>SpaceX Rocket - $60,000,000</span>
+      <div class="item" data-cost="50000">
+        <img src="https://miro.medium.com/v2/resize:fit:1400/1*7OhVB5Umtxnb10yA2Ou-oA.jpeg" alt="ring" />
+        <span>PS5 - $2,000</span>
         <input type="number" min="1" value="1" />
-        <button onclick="buyItem(this.parentElement)">Buy</button>
+        <button>Buy</button>
       </div>
 
-      <!-- Unicorn Startup -->
+      <div class="item" data-cost="10000000">
+        <img src="https://pics.craiyon.com/2023-07-12/debb973051ee44f6aabb9a6728d8bfe8.webp" alt="pirate ship" />
+        <span>Pirate Ship - $10,000,000</span>
+        <input type="number" min="1" value="1" />
+        <button>Buy</button>
+      </div>
+
       <div class="item" data-cost="1000000000">
-        <img src="/assets/images/unicorn.avif" alt="uni" />
-        <span>Unicorn Startup - $1,000,000,000</span>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZSLiJTh2x4fuW5YGbF7iM2lZt2xWhb1zV5AKNuKTk4w&s" alt="time machine" />
+        <span>Time Machine - $1,000,000,000</span>
         <input type="number" min="1" value="1" />
-        <button onclick="buyItem(this.parentElement)">Buy</button>
+        <button>Buy</button>
       </div>
 
-      <!-- Bird App -->
-      <div class="item" data-cost="44000000000">
-        <img src="/assets/images/birdapp.avif" alt="birdapp" />
-        <span>Bird App - $44,000,000,000</span>
+      <div class="item" data-cost="100000">
+        <img src="https://c4.wallpaperflare.com/wallpaper/1009/293/310/star-wars-sword-jedi-light-saber-wallpaper-preview.jpg" alt="lightsaber" />
+        <span>Lightsaber - $100,000</span>
         <input type="number" min="1" value="1" />
-        <button onclick="buyItem(this.parentElement)">Buy</button>
+        <button>Buy</button>
       </div>
+
+      <div class="item" data-cost="25000000">
+        <img src="https://c4.wallpaperflare.com/wallpaper/278/81/112/submarine-akula-v-class-nuclear-submarine-military-wallpaper-preview.jpg" alt="submarine" />
+        <span>Private Submarine - $25,000,000</span>
+        <input type="number" min="1" value="1" />
+        <button>Buy</button>
+      </div>
+
+      <div class="item" data-cost="500000000">
+        <img src="https://images.unsplash.com/photo-1505731110654-99d7f7f8e39c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGFtdXNlbWVudCUyMHBhcmt8ZW58MHx8MHx8fDA%3D" alt="dinosaur park" />
+        <span>Amusement Park - $500,000,000</span>
+        <input type="number" min="1" value="1" />
+        <button>Buy</button>
+      </div>
+
+      <div class="item" data-cost="200000">
+        <img src="https://media.wired.com/photos/59323d8a4dc9b45ccec5cc6e/master/pass/lexus-hoverboard-ft.jpg" alt="hoverboard" />
+        <span>Hoverboard - $200,000</span>
+        <input type="number" min="1" value="1" />
+        <button>Buy</button>
+      </div>
+
     </div>
 
     <div class="thanks">
